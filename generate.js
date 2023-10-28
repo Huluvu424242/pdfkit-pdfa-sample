@@ -54,7 +54,26 @@ doc._root.data.Metadata = refMetadata;
 // PDF/A standard requires fonts to be embedded.
 doc.registerFont('OpenSans', 'OpenSans-Regular.ttf');
 
-doc.font('OpenSans').text('Sample PDF/A document generated with PDFKit.');
+doc.markContent('H1');
+doc.font('OpenSans').text('Klassenübersicht');
+doc.endMarkedContent();
+
+doc.markContent('h2');
+doc.font('OpenSans').text('Unterstufe');
+doc.endMarkedContent();
+
+const lorem = `
+
+`
+doc.text(lorem, {
+  columns: 3,
+  columnGap: 15,
+  height: 100,
+  width: 465,
+  align: 'justify'
+});
+
+
 
 doc.pipe(fs.createWriteStream('sample.pdf'));
 doc.end();

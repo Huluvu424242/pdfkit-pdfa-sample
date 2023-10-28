@@ -10,6 +10,6 @@
   "author": "Pádraig Galvin",
   "license": "MIT",
   "dependencies": {
-    "pdfkit": "^0.11.0"
+    "pdfkit": "0.13.0"
   }
 }

@@ -4,8 +4,9 @@
   "description": "Sample code for generating PDF/UA document with PDFKit.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js auch mit watch über dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "alles im dist bauen mit watch über src"
   },
   "author": "Pádraig Galvin",
   "license": "MIT",

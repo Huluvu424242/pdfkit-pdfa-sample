@@ -1,8 +1,10 @@
-// import {PDFDocument} from "pdfkit";
-// import {blobStream} from  "blob-stream";
 
-const PDFDocument = require('pdfkit');
-const blobStream  = require('blob-stream');
+import {PDFDocument} from "pdfkit";
+import {blobStream} from  "blob-stream";
+// const PDFDocument = require('pdfkit');
+// const blobStream  = require('blob-stream');
+
+document.querySelector('button').addEventListener("click", generiereSamplePDF)
 
 
 export function generiereSamplePDF() {

@@ -73,7 +73,14 @@ class PdfUaBuilder {
      * fontName = Fontname
      */
     addHeading(text, options) {
+
+        const myStructContent = this.#doc.markStructureContent('H1');
         this.#doc.font(options.fontName).text(text);
+        this.#doc.endMarkedContent();
+
+        this.#doc.addStructure(this.#doc.struct('H1', myStructContent));
+
+
     }
 
 }

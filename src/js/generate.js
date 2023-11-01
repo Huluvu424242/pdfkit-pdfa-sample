@@ -5,7 +5,7 @@ const {createPdfUaBuilder} = require("./pdfua-builder");
 const fontName = 'OpenSans';
 
 
-const doc = new PDFDocument({ pdfVersion: '1.7' });
+const doc = new PDFDocument({ pdfVersion: '1.7', size: 'A4', lang: 'de-DE' });
 
 const pdfuaBuilder = createPdfUaBuilder(doc);
 

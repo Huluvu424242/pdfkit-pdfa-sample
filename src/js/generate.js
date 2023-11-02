@@ -13,7 +13,7 @@ pdfuaBuilder.setColorProfile();
 pdfuaBuilder.setMetaData();
 pdfuaBuilder.registerFont(fontName, 'OpenSans-Regular.ttf');
 
-pdfuaBuilder.addHeading("Klassenübersicht",{"fontName":fontName});
+pdfuaBuilder.addHeading("Wahlübersicht",{"fontName":fontName});
 
 
 
